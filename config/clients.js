@@ -13,8 +13,8 @@ const defaultClientConfig = {
 
   // Email settings
   email_settings: {
-    from_email: process.env.BREVO_FROM_EMAIL || 'collections@bridgeaihq.com',
-    from_name: process.env.BREVO_FROM_NAME || 'BridgeAI Collections',
+    from_email: process.env.BREVO_FROM_EMAIL || process.env.BUSINESS_EMAIL || 'alex@bridgeaihq.com',
+    from_name: process.env.BREVO_FROM_NAME || 'Alex from BridgeAI',
     reply_to: process.env.BUSINESS_EMAIL || 'alex@bridgeaihq.com'
   },
 
